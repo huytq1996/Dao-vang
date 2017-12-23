@@ -1,0 +1,16 @@
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\bin\Debug\CLIENT.exe
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\bin\Debug\CLIENT.pdb
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\obj\Debug\CLIENT.csprojResolveAssemblyReference.cache
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\obj\Debug\CLIENT.exe
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\obj\Debug\CLIENT.pdb
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\obj\Debug\CLIENT.MainForm.resources
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\CLIENT\obj\Debug\CLIENT.csproj.GenerateResource.Cache
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.MainForm.resources
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.csproj.GenerateResource.Cache
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.exe
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.pdb
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\bin\Debug\CLIENT.exe
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\bin\Debug\CLIENT.pdb
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.Properties.Resources.resources
+C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.csprojResolveAssemblyReference.cache

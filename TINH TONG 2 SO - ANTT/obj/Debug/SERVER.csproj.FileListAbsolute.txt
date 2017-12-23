@@ -1,0 +1,16 @@
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.exe
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.pdb
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csprojResolveAssemblyReference.cache
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.exe
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.pdb
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\obj\Debug\TINH_TONG_2_SO___ANTT.MainForm.resources
+C:\Users\chepchip\Documents\SharpDevelop Projects\TINH TONG 2 SO - ANTT\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csproj.GenerateResource.Cache
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.exe
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.pdb
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csproj.GenerateResource.Cache
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csproj.CoreCompileInputs.cache
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.exe
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.pdb
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csprojResolveAssemblyReference.cache
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.MainForm.resources
+C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\Dao_Vang.Properties.Resources.resources
