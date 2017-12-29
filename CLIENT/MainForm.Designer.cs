@@ -57,13 +57,13 @@ namespace CLIENT
             this.BoxOpMark = new System.Windows.Forms.TextBox();
             this.BoxMyMark = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.Room = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btbatdau = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cancau = new System.Windows.Forms.Button();
             this.btdao = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cancau = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -162,7 +162,7 @@ namespace CLIENT
             this.lbtime.Name = "lbtime";
             this.lbtime.Size = new System.Drawing.Size(22, 16);
             this.lbtime.TabIndex = 7;
-            this.lbtime.Text = "60";
+            this.lbtime.Text = "";
             // 
             // label5
             // 
@@ -222,13 +222,23 @@ namespace CLIENT
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.Room);
-            this.panel4.Controls.Add(this.textBox3);
             this.panel4.Controls.Add(this.btbatdau);
             this.panel4.Location = new System.Drawing.Point(542, 244);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(171, 107);
             this.panel4.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(17, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 20);
+            this.label8.TabIndex = 13;
             // 
             // Room
             // 
@@ -238,13 +248,6 @@ namespace CLIENT
             this.Room.Size = new System.Drawing.Size(38, 13);
             this.Room.TabIndex = 7;
             this.Room.Text = "Phòng";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(14, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 20);
-            this.textBox3.TabIndex = 12;
             // 
             // btbatdau
             // 
@@ -268,6 +271,21 @@ namespace CLIENT
             this.panel5.Size = new System.Drawing.Size(524, 46);
             this.panel5.TabIndex = 15;
             // 
+            // cancau
+            // 
+            this.cancau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cancau.BackColor = System.Drawing.Color.White;
+            this.cancau.BackgroundImage = global::CLIENT.Properties.Resources.Untitled1;
+            this.cancau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cancau.Location = new System.Drawing.Point(0, 0);
+            this.cancau.Margin = new System.Windows.Forms.Padding(0);
+            this.cancau.Name = "cancau";
+            this.cancau.Size = new System.Drawing.Size(23, 46);
+            this.cancau.TabIndex = 1;
+            this.cancau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.cancau.UseVisualStyleBackColor = false;
+            // 
             // btdao
             // 
             this.btdao.Enabled = false;
@@ -284,27 +302,12 @@ namespace CLIENT
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // cancau
-            // 
-            this.cancau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.cancau.BackColor = System.Drawing.Color.White;
-            this.cancau.BackgroundImage = global::CLIENT.Properties.Resources.Untitled1;
-            this.cancau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cancau.Location = new System.Drawing.Point(0, 0);
-            this.cancau.Margin = new System.Windows.Forms.Padding(0);
-            this.cancau.Name = "cancau";
-            this.cancau.Size = new System.Drawing.Size(23, 46);
-            this.cancau.TabIndex = 1;
-            this.cancau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.cancau.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::CLIENT.Properties.Resources.brown;
+            this.panel1.BackgroundImage = global::CLIENT.Properties.Resources.Asset_3_100;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 58);
@@ -371,10 +374,10 @@ namespace CLIENT
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btdao;
         private volatile System.Windows.Forms.Button cancau;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label Room;
         private System.Windows.Forms.Label lbtime;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

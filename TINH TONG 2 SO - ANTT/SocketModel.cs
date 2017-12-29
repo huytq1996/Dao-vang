@@ -73,7 +73,7 @@ namespace SERVER
 		}
 		//send data to client
 		public void SendData(string str){
-            string tem="";
+      
             Thread.Sleep(1);
             //QUESTION: why use try/catch here?
             try
@@ -81,12 +81,7 @@ namespace SERVER
                 Console.WriteLine("\nstring Sent: " + str + "\n");
                 ASCIIEncoding asen = new ASCIIEncoding();
                 socket.Send(asen.GetBytes(str));
-               /* tem = ReceiveData();
-                while (tem[0] != str[0])
-                {
-                    socket.Send(asen.GetBytes(str));
-                    tem = ReceiveData();
-                }*/
+    
             }
             catch (Exception e)
             {

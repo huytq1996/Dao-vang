@@ -14,3 +14,12 @@ C:\Users\nhocc\Desktop\Đào vàng\CLIENT\bin\Debug\CLIENT.exe
 C:\Users\nhocc\Desktop\Đào vàng\CLIENT\bin\Debug\CLIENT.pdb
 C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.Properties.Resources.resources
 C:\Users\nhocc\Desktop\Đào vàng\CLIENT\obj\Debug\CLIENT.csprojResolveAssemblyReference.cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\bin\Debug\CLIENT.exe
+F:\GIT_Dao_vang\Dao-vang\CLIENT\bin\Debug\CLIENT.pdb
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.csprojResolveAssemblyReference.cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.MainForm.resources
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.Properties.Resources.resources
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.csproj.GenerateResource.Cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.csproj.CoreCompileInputs.cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.exe
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Debug\CLIENT.pdb

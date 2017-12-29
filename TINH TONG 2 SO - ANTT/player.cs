@@ -100,5 +100,18 @@ namespace SERVER
                 //  while (sk.ReceiveData() != Cons.Receive_OK) { sk.SendData(Cons.Send_Ready + ""); } ;
             }
         }
+        public void SendEnd()
+        {
+            sk.SendData(Cons.Send_End + "");
+        }
+        public void SendResult(int result)
+        {
+            if(result==1)
+            sk.SendData(Cons.Send_Result+"4");
+            if(result == 0)
+                sk.SendData(Cons.Send_Result + "5");
+            if (result == -1)
+                sk.SendData(Cons.Send_Result + "6");
+        }
     }
 }

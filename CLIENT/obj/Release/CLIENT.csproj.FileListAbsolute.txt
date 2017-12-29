@@ -1,0 +1,7 @@
+F:\GIT_Dao_vang\Dao-vang\CLIENT\bin\Release\CLIENT.exe
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.MainForm.resources
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.Properties.Resources.resources
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.csproj.GenerateResource.Cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.csproj.CoreCompileInputs.cache
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.exe
+F:\GIT_Dao_vang\Dao-vang\CLIENT\obj\Release\CLIENT.csprojResolveAssemblyReference.cache

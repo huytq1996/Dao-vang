@@ -14,3 +14,12 @@ C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.pdb
 C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csprojResolveAssemblyReference.cache
 C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.MainForm.resources
 C:\Users\nhocc\Desktop\Đào vàng\TINH TONG 2 SO - ANTT\obj\Debug\Dao_Vang.Properties.Resources.resources
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.exe
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\bin\Debug\SERVER.pdb
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csprojResolveAssemblyReference.cache
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.MainForm.resources
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\Dao_Vang.Properties.Resources.resources
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csproj.GenerateResource.Cache
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.csproj.CoreCompileInputs.cache
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.exe
+F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Debug\SERVER.pdb

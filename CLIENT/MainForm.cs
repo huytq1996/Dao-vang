@@ -34,7 +34,9 @@ namespace CLIENT
         volatile bool flagRuncancau = true;
         volatile bool flagdraw = false;
         volatile bool flagReady = false;
-       // int My_Mark=0, Op_Mark=0;
+        volatile bool flagEnd = false;
+        volatile char result;
+        // int My_Mark=0, Op_Mark=0;
         List<GOLD> lstGold = new List<GOLD>();
         private TCPModel tcp;
         bool master = false;
@@ -74,7 +76,6 @@ namespace CLIENT
             while (true)
             {
              
-                textBox3.Text = cancau.Location.ToString();
                 while (flagReady == false) ;
                 while (!flagRuncancau)
                 {
@@ -97,6 +98,17 @@ namespace CLIENT
         }
         void HandleReceive(String str)
         {
+            if (str[0] == Cons.Receive_Result)
+            {
+                result = str[1];
+                return;
+            }
+
+            if (str[0]==Cons.Receive_End)
+            {
+                flagEnd = true;
+                return;
+            }
             if(str[0]==Cons.Receive_OpDisconnect)
             {
                 flagReady = false;
@@ -150,6 +162,7 @@ namespace CLIENT
                 drawmap(lstGold);
                 btdao.Enabled = true;
                 BoxMyMark.Text = "0";
+                BoxOpMark.Text = "0";
                 return;
             }
             if (str[0] == Cons.Receive_Golg)
@@ -209,7 +222,7 @@ namespace CLIENT
         {
             BoxMyMark.Text = Convert.ToString(Int32.Parse(BoxMyMark.Text) + g.value);
         }
-        GOLD Colligent(Point pt)
+        GOLD Collision(Point pt)
         {
             GOLD result;
             lock (lockthis)
@@ -224,7 +237,7 @@ namespace CLIENT
             }
             return result;
         }
-        void dawnstrain()
+        void drawstraight()
         {
             Point start, run, end;
             int t;
@@ -240,7 +253,7 @@ namespace CLIENT
                 start = new Point(cancau.Location.X + cancau.Width / 2, 0);
                 run = new Point(start.X, start.Y + 2);
                 end = new Point(start.X, start.Y + panel1.Height);
-                tem = Colligent(run);
+                tem = Collision(run);
                 t1 = 0;
                 t2 = 0;
                 while (run.Y >= start.Y + 2)
@@ -255,7 +268,7 @@ namespace CLIENT
                     if (tem == null)
                     {
                         if (t2 == 0)
-                            tem = Colligent(run);
+                            tem = Collision(run);
                     }
                     else
                     {
@@ -274,7 +287,7 @@ namespace CLIENT
                 }
                 try
                 {
-                    if (tem.pos != tem.lb.Location)
+                    if (tem.pos != tem.lb.Location&&flagdraw==true)
                     {
                         AddMark(tem);
                         tem.lb.Visible = false;
@@ -317,7 +330,7 @@ namespace CLIENT
             //t.Priority = ThreadPriority.AboveNormal;
             t.Start();
 
-            Thread t1 = new Thread(dawnstrain);
+            Thread t1 = new Thread(drawstraight);
            // t1.Priority = ThreadPriority.Normal;
             t1.Start();
 
@@ -346,25 +359,31 @@ namespace CLIENT
 
             if (progressBar1.Value <= 0)
             {
-
+                flagdraw = false;
                 flagReady = false;
                 flagRuncancau = false;
-                flagdraw = false;
+                tcp.SendData(Cons.Send_End + "");
                 timer1.Enabled = false;
+                while (!flagEnd) ;
+                // Thread.Sleep(2000);
+                int mymark = Int32.Parse(BoxMyMark.Text);
+                int opmark = Int32.Parse(BoxOpMark.Text);
                 Clear_Panel1();
                 Clear_LstGold();
                 refresh();
                 btdao.Enabled = false;
                 Thread.Sleep(1000);
-                if (Int32.Parse(BoxMyMark.Text) > Int32.Parse(BoxOpMark.Text))
-                    MessageBox.Show("Bạn đã thắng"); 
-                if (Int32.Parse(BoxMyMark.Text) == Int32.Parse(BoxOpMark.Text))
-                    { MessageBox.Show("Hai người đã hòa"); }
-                if (Int32.Parse(BoxMyMark.Text) > Int32.Parse(BoxOpMark.Text))
-                   { MessageBox.Show("Bạn đã thua"); }
+                
+                if (result=='4')
+                   label8.Text="Bạn đã thắng"; 
+                if (result == '5')
+                    { label8.Text = "Hai người đã hòa"; }
+                if (result == '6')
+                   { label8.Text = "Bạn đã thua"; }
                 if (master == false)
                     btbatdau.Enabled = true;
-                tcp.SendData(Cons.Send_End + "");
+                
+                flagEnd = false;
             }
             else
             {
@@ -385,6 +404,7 @@ namespace CLIENT
             timer1.Start();
             btbatdau.Enabled = false;
             btdao.Enabled = false;
+            label8.Text = "";
             if (master == false)
                 tcp.SendData(Cons.Send_Ready+"");
             else

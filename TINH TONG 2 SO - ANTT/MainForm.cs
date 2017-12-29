@@ -31,13 +31,13 @@ namespace SERVER
 			CheckForIllegalCrossThreadCalls = false;
 		}
         private List<ROOM> lstROOM = new List<ROOM>();
-        private PLAYER []player=new PLAYER[2];
+       // private PLAYER []player=new PLAYER[2];
 		private TCPModel tcp;
-		private SocketModel[] socket = new SocketModel[100];
-		private int soClientHienTai = 0;
-        private int soRoomHienTai = 0;
+		//private SocketModel[] socket = new SocketModel[100];
+		//private int soClientHienTai = 0;
+     //   private int soRoomHienTai = 0;
      //   List<GOLD> lstGolg = new List<GOLD>();
-        bool flagservice = true;
+       // bool flagservice = true;
         // private int status=0;
         object lockth = new object();
         ROOM FindRoom()
@@ -47,7 +47,7 @@ namespace SERVER
             return room;
         }
 
-        GOLD Colligent(Point pt,ROOM room)
+        GOLD Collision(Point pt,ROOM room)
         {
             return room.lstGold.Find(x => x.pos == pt); 
         }
@@ -57,17 +57,30 @@ namespace SERVER
             if (str[0] == Cons.Receive_End)
             {
                 play.End = true;
-                if(roomofplay.player_M.End==true&& roomofplay.player_S.End == true)
+                if (roomofplay.player_M.End == true && roomofplay.player_S.End == true)
                 {
+                    if (roomofplay.player_S.Mark > roomofplay.player_M.Mark)
+                    {
+                        roomofplay.player_S.SendResult(1);
+                        roomofplay.player_M.SendResult(-1);
+                    }
+                    if (roomofplay.player_S.Mark < roomofplay.player_M.Mark)
+                    {
+                        roomofplay.player_S.SendResult(-1);
+                        roomofplay.player_M.SendResult(1);
+                    }
+                    if (roomofplay.player_S.Mark == roomofplay.player_M.Mark)
+                    {
+                        roomofplay.player_S.SendResult(0);
+                        roomofplay.player_M.SendResult(0);
+                    }
                     roomofplay.lstGold.Clear();
+                    roomofplay.player_S.SendEnd();
+                    roomofplay.player_M.SendEnd();
                     roomofplay.player_M.End = false;
                     roomofplay.player_S.End = false;
                     roomofplay.CreatMap();
-                    roomofplay.player_M.SendMap(roomofplay.lstGold);
-                    Thread.Sleep(15);
-                    //   Thread.Sleep(15);
-                    roomofplay.player_S.SendMap(roomofplay.lstGold);
-                    Thread.Sleep(15);
+                 
 
                 }
                 return;
@@ -75,6 +88,12 @@ namespace SERVER
             if (str[0] == Cons.Receive_Ready)
             {
                 roomofplay.player_M.SendReady();
+                Thread.Sleep(15);
+                roomofplay.player_M.SendMap(roomofplay.lstGold);
+                Thread.Sleep(15);
+                //   Thread.Sleep(15);
+                roomofplay.player_S.SendMap(roomofplay.lstGold);
+                Thread.Sleep(15);
                 return;
             }
             if (str[0] == Cons.Receive_Start)
@@ -92,7 +111,7 @@ namespace SERVER
                 
                 //  lock (lstGolg)
                 {
-                    remove = Colligent(pt,roomofplay);
+                    remove = Collision(pt,roomofplay);
 
                     if (remove != null)
                     {
@@ -119,11 +138,13 @@ namespace SERVER
                 if (play == roomofplay.player_M)
                 {
                    roomofplay.player_S.SendMark(str);
+
                 }
                 else
                 {
                     roomofplay.player_M.SendMark(str);
                 }
+                play.Mark = Int32.Parse(str);
                 return;
             }
             
