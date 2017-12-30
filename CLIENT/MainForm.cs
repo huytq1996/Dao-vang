@@ -320,8 +320,14 @@ namespace CLIENT
         void ConnectClick(object sender, System.EventArgs e)
         {
             //Step 1: Ket noi toi server
+            int flag;
             tcp = new TCPModel(textBox1.Text, int.Parse(textBox2.Text));
-            int flag = tcp.ConnectToServer();
+            flag= tcp.ConnectToServer();
+            if(flag==-1)
+            {
+                MessageBox.Show("Server chưa mở hoặc bị lỗi");
+                return;
+            }
             btconnect.Enabled = false;
             btbatdau.Enabled = true;
             label7.Visible = false;
@@ -411,5 +417,9 @@ namespace CLIENT
                 tcp.SendData(Cons.Send_Start + "");
         }
 
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

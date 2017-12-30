@@ -1,0 +1,10 @@
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\bin\Release\CLIENT.exe.config
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\bin\Release\CLIENT.exe
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\bin\Release\CLIENT.pdb
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.MainForm.resources
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.Properties.Resources.resources
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.csproj.GenerateResource.Cache
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.exe
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.pdb
+C:\Users\nhocc\Desktop\Dao_vang\CLIENT\obj\Release\CLIENT.csprojResolveAssemblyReference.cache

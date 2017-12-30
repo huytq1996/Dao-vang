@@ -5,3 +5,10 @@ F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Release\Dao_Vang.Properties.R
 F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Release\SERVER.csproj.GenerateResource.Cache
 F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Release\SERVER.csproj.CoreCompileInputs.cache
 F:\GIT_Dao_vang\Dao-vang\TINH TONG 2 SO - ANTT\obj\Release\SERVER.exe
+F:\GIT_Dao_vang\Dao-vang\SERVER\bin\Release\SERVER.exe
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\SERVER.csprojResolveAssemblyReference.cache
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\SERVER.MainForm.resources
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\Dao_Vang.Properties.Resources.resources
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\SERVER.csproj.GenerateResource.Cache
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\SERVER.csproj.CoreCompileInputs.cache
+F:\GIT_Dao_vang\Dao-vang\SERVER\obj\Release\SERVER.exe

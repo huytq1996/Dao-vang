@@ -350,6 +350,10 @@ namespace SERVER
 			Thread t = new Thread(MultiScript);
 			t.Start();
         }
-        
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
